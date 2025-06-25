@@ -19,3 +19,33 @@ A simple web application built with Django to upload, store, and view candidate 
 - HTML/CSS (basic frontend)
 
 ---
+Project Structure
+DjangoResumeUploader/
+├── myapp/
+│   ├── migrations/
+│   ├── templates/
+│   │   └── myapp/
+│   │       ├── home.html
+│   │       └── detail.html
+│   ├── admin.py
+│   ├── models.py
+│   ├── views.py
+│   └── urls.py
+├── resumeuploader/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── manage.py
+└── README.md
+
+Future Enhancements
+Add a user-facing resume upload form
+
+Search/filter candidates
+
+Use PostgreSQL for production
+
+Add file type/size validation
+
+Resume preview (PDF rendering)
