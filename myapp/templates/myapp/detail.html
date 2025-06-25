@@ -1,0 +1,12 @@
+<!-- myapp/templates/myapp/detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Detail</title>
+</head>
+<body>
+    <h1>{{ candidate.name }}</h1>
+    <p>Email: {{ candidate.email }}</p>
+    <p>Resume: <a href="{{ candidate.resume.url }}">Download</a></p>
+</body>
+</html>
