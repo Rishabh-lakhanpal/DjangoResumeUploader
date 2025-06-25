@@ -19,4 +19,6 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.HomeViews.as_view(), name='home')
+    path('candidate/<int:pk>/', views.CandidateDetailView.as_view(), name='candidate'),  # ✅ FIXED
+
 ]
